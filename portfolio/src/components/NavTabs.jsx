@@ -4,6 +4,8 @@ function NavTabs(){
 
   const currentPage = useLocation().pathname;
   return (
+    <>
+     <h1>Bisrat </h1>
     <ul className='nav nav-tabs'>
       <li className='nav-item'>
       <Link to='/' className={currentPage==='/'?'nav-link active':'nav-link'}>
@@ -26,6 +28,7 @@ function NavTabs(){
       </Link>
       </li>
     </ul>
+    </>
   )
 
 }
