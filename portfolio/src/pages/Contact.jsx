@@ -1,23 +1,22 @@
-export default function Portofolio() {
+export default function Contact() {
   return (
     <div>
       <h3>Contact</h3>
       <div >
-        <form action="action_page.php">
-
-        <label >Name</label>
-        <input type="text" id="fname" name="firstname" />
-
-        <label >Email Address</label>
-        <input type="text" id="lname" name="lastname" />
-      
-
-        <label >Message</label>
-        <textarea id="subject" name="subject"  style="height:200px"></textarea>
-
-        <input type="submit" value="Submit"/>
-
-        </form>
+      <form>
+      <fieldset>
+         <label>
+           <p>Name</p>
+           <input name="name" />
+           <p>Email Address</p>
+           <input name="email" />
+           <p>Name</p>
+           <textarea name="text" style="height:200px" />
+         </label>
+       </fieldset>
+       <button type="submit">Submit</button>
+      </form>
+       
     </div>
    </div>
   );

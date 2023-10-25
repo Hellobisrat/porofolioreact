@@ -1,16 +1,16 @@
 
 import ReactDOM from 'react-dom/client'
-import {createBrowseRouter, RouterProvider} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import './index.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 import Error from './pages/Error';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portofolio';
 import Resume from './pages/Resume';
 
-const router = createBrowseRouter ([
+const router = createBrowserRouter ([
   {
    path:'/',
    element:<App/>,
