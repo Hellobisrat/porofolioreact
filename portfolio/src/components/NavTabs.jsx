@@ -1,10 +1,14 @@
 import {Link, useLocation} from 'react-router-dom'
 
+
 function NavTabs(){
 
   const currentPage = useLocation().pathname;
   return (
-    <>
+    <nav className="navbar bg-body-tertiary">
+  <div className="container-fluid">
+
+    
      <h1>Bisrat </h1>
     <ul className='nav nav-tabs'>
       <li className='nav-item'>
@@ -28,7 +32,10 @@ function NavTabs(){
       </Link>
       </li>
     </ul>
-    </>
+  
+  </div>
+</nav>
+  
   )
 
 }

@@ -1,9 +1,13 @@
-function Footer () {
+import { FaStackOverflow } from "react-icons/fa";
 
+
+
+function Footer () {
   
 
   return (
-     <></>
+     <> <FaStackOverflow/> </>
+    
   )
 }
 

@@ -1,0 +1,94 @@
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-content: center;
+  gap: 2em;  
+}
+.lists a {
+  text-decoration:none;
+}
+
+#list1{ 
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../../assets/profilepicture.jpg');
+  height: 100px;
+  width: 550px;
+  
+}
+#list2{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../im');
+  height: 100px;
+  width: 550px;
+}
+#list3{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img7.jpg' );
+  height: 100px;
+  width: 550px;
+}
+
+#list4{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img8.jpg');
+  height: 100px;
+  width: 550px;
+}
+
+#list5{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img8.jpg');
+  height: 100px;
+  width: 550px;
+}
+#list6{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img8.jpg');
+  height: 100px;
+  width: 550px;
+}
+#list7{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img8.jpg');
+  height: 100px;
+  width: 550px;
+}
+#list8{
+  color:white;
+  font-size: 30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  background-image: url('../images/img8.jpg');
+  height: 100px;
+  width: 550px;
+}

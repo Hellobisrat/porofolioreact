@@ -1,62 +1,64 @@
-import {React} from "react";
+
 import { useState } from 'react';
+import Form from 'react-bootstrap/Form';
 
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setName(value) : setName(value);
-  };
+  const emailValidator = (value) => (
+    new RegExp(/\S+@\S+\.\S+/).test(value) ? "" : "Please enter a valid email."
+  );
+  const requiredValidator = (value) => {
+    return value ? "" : "This field is required";
+  }
+  
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
+    setMessage('')
+    setName('');
+    setEmail('');
   };
  
   return (
-    <form >
-      <h1>Contact</h1>
-
-      <label>
-        Name:
+    <Form>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Name</Form.Label>
         <input
           name="name"
           type="name"
-          value={name}
+          defaultValue={name}
           required />
-      </label>
-
-      <label>
-        Email:
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label>Email</Form.Label>
         <input
-          name="email"
-          type="email"
-          value={email}
+          name="name"
+          type="name"
+          defaultValue={email}
           required />
-      </label>
-      <label>
-        Message:
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>message</Form.Label>
         <input
           name="message"
           type="message"
-          value={message}
+          defaultValue={message}
+          rows={3} 
           required />
-      </label>
 
+      </Form.Group>
+    
+    
     
 
       <button>Submit</button>
-    </form>
+    </Form>
   );
 }
