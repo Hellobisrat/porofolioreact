@@ -1,64 +1,94 @@
-
-import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import * as formik from 'formik';
+import * as yup from 'yup';
 
 
-export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+function Contact () {
+  const { Formik } = formik;
 
-  const emailValidator = (value) => (
-    new RegExp(/\S+@\S+\.\S+/).test(value) ? "" : "Please enter a valid email."
-  );
-  const requiredValidator = (value) => {
-    return value ? "" : "This field is required";
-  }
-  
+  const schema = yup.object().shape({
+    Name: yup.string().required(),
+    email: yup.string().required(),
+    message: yup.string().required(),
+   
+  });
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-
-    // Alert the user their first and last name, clear the inputs
-    setMessage('')
-    setName('');
-    setEmail('');
-  };
- 
   return (
-    <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Name</Form.Label>
-        <input
-          name="name"
-          type="name"
-          defaultValue={name}
-          required />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Email</Form.Label>
-        <input
-          name="name"
-          type="name"
-          defaultValue={email}
-          required />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>message</Form.Label>
-        <input
-          name="message"
-          type="message"
-          defaultValue={message}
-          rows={3} 
-          required />
+    <>
+    <h3>Contact</h3>
+    <Formik
+      validationSchema={schema}
+      onSubmit={console.log}
+      initialValues={{
+        Name: '',
+        email: '',
+        message: '',
+        
+      }}
+    >
+      
+      {({ handleSubmit, handleChange, values, touched, errors }) => (
+        <Form noValidate onSubmit={handleSubmit}>
+        
+            <Form.Group as={Col} md="4" controlId="validationFormik01">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
+                type="text"
+                name="Name"
+                value={values.Name}
+                onChange={handleChange}
+                isValid={!errors.Name}
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+            </Form.Group>
+            
+            <Form.Group as={Col} md="4" controlId="validationFormikUsername">
+              <Form.Label>Email address</Form.Label>
+              <InputGroup hasValidation>
+                <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
+                <Form.Control
+                  type="email"
+                  placeholder=" "
+                  aria-describedby="inputGroupPrepend"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
+                  isInvalid={!!errors.email}
+                />
+                <Form.Control.Feedback type="invalid">
+                  {errors.email}
+                </Form.Control.Feedback>
+              </InputGroup>
+            </Form.Group>
+       
+        
+            <Form.Group as={Col} md="6" controlId="validationFormik03">
+              <Form.Label>message</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder=""
+                name="message"
+                value={values.message}
+                onChange={handleChange}
+                isInvalid={!!errors.message}
+              />
 
-      </Form.Group>
-    
-    
-    
-
-      <button>Submit</button>
-    </Form>
+              <Form.Control.Feedback type="invalid">
+                {errors.message}
+              </Form.Control.Feedback>
+            </Form.Group>
+           
+        
+          <Button type="submit">Submit </Button>
+        </Form>
+      )}
+    </Formik>
+    </>
   );
 }
+
+export default Contact;

@@ -1,7 +1,7 @@
 //import { FaStackOverflow,FAGithub,FALinkedin } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
 import {FaGithub,FaLinkedinIn} from 'react-icons/fa'
-import './style.css'
+import './Footer.css'
 
 
 
