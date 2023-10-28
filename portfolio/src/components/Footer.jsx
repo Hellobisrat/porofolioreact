@@ -1,4 +1,5 @@
 import { FaStackOverflow } from "react-icons/fa";
+import Card from 'react-bootstrap/Card';
 
 
 
@@ -6,7 +7,14 @@ function Footer () {
   
 
   return (
-     <> <FaStackOverflow/> </>
+   
+    <Card   className="footer">
+      <> <FaStackOverflow/> </>,
+      
+      <i class="bi bi-github"></i>
+
+    </Card>
+     
     
   )
 }

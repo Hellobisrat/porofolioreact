@@ -67,4 +67,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .foot{
+    display: flex;
+    height: 60px ;
+    width: auto;
+    margin-top: 10px;
+    background-color: black;
+}
 }

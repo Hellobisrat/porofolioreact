@@ -1,0 +1,13 @@
+.proficiency{
+  width: 18rem;
+  align-self: center;
+  display: inline-block;
+  color: blue;
+  margin: 20px;
+
+  
+}
+
+.list {
+  color: gold;
+}

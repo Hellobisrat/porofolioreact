@@ -1,7 +1,11 @@
+
+import './style.css'
+import profilepicture from '../../assets/profilepicture.jpg'
 export default function About () {
   return (
-    <div>
-       <h2>About Me</h2>
+    <div className='container'>
+       <h2 id='head'>About Me</h2>
+       <img src={profilepicture} id='image' alt="profile picture"/>
 
    <p>  
         Bisrat mengesha a  full stack developer in 

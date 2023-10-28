@@ -2,7 +2,7 @@ import './style.css'
 export default function Portofolio () {
   return (
     <div>
-       <h2> list of work</h2>
+       <h2 id='title'> list of work</h2>
             
                 <div className="lists">
                 

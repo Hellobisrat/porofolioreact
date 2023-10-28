@@ -1,0 +1,18 @@
+.container{
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  line-height: 50px;
+  width: 75%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#head{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+#image{
+  border-radius: 80px;
+  height: 100px;
+}
