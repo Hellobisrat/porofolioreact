@@ -15,31 +15,9 @@
  <img src='./portfolio/src/assets/Contact.jpg'>
  <img src='./portfolio/src/assets/Portofolio.jpg'>
  <img src='./portfolio/src/assets/Resume.jpg'>
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 repo link https://github.com/Hellobisrat/porofolioreact.git
+
+
+deploy link https://tubular-eclair-a48831.netlify.app
