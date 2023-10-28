@@ -1,6 +1,7 @@
 //import { FaStackOverflow,FAGithub,FALinkedin } from "react-icons/fa";
 import Card from 'react-bootstrap/Card';
 import {FaGithub,FaLinkedinIn} from 'react-icons/fa'
+
 import './Footer.css'
 
 
@@ -14,6 +15,7 @@ function Footer () {
       <ul >
         <li><a href="https://github.com/Hellobisrat"><FaGithub/>Github</a></li>
         <li><a href="https://www.linkedin.com/in/bisrat-zerihun-6922a378/"><FaLinkedinIn/>Linkedin</a></li>
+       
       </ul>
      
 

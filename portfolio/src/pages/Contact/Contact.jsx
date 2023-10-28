@@ -2,9 +2,9 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
+import './form.css'
 
 
 function Contact () {
@@ -31,22 +31,23 @@ function Contact () {
       }}
     >
       
-      {({ handleSubmit, handleChange, values, touched, errors }) => (
-        <Form noValidate onSubmit={handleSubmit}>
+      {({ handleSubmit, handleChange, values, errors }) => (
+        <Form noValidate onSubmit={handleSubmit} className='form'>
         
-            <Form.Group as={Col} md="4" controlId="validationFormik01">
+         
+            <Form.Group as={Col} md="4" controlId="validationFormik03">
               <Form.Label>Name</Form.Label>
               <Form.Control
                 type="text"
-                name="Name"
+                placeholder=""
+                name="name"
                 value={values.Name}
                 onChange={handleChange}
-                isValid={!errors.Name}
+                isInvalid={!!errors.Name}
               />
-              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
-            
-            <Form.Group as={Col} md="4" controlId="validationFormikUsername">
+            <Form.Group as={Col} md="4"  controlId="validationFormikUsername">
               <Form.Label>Email address</Form.Label>
               <InputGroup hasValidation>
                 <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>

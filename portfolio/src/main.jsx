@@ -6,7 +6,7 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Error from './pages/Error';
 import About from './pages/About/About.jsx';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact.jsx';
 import Portfolio from './pages/Portofolio/Portofolio.jsx';
 import Resume from './pages/Resume/Resume.jsx';
 
