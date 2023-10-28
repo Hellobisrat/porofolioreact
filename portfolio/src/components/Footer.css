@@ -21,9 +21,9 @@ li a {
   color: black;
 }
 .foot{
-  display: flex;
-  height: 30px ;
-  width: auto;
-  background-color: rgb(85, 85, 137);
+  display: flex !important;
+  height: 30px  !important;
+  width: 100%;
+  background-color: silver !important;
   
 }
