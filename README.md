@@ -12,10 +12,10 @@
  each component page pictures are displayed
 
 
- ![About!](/assets/About.jpg "About")
- ![Contact!](/assets/Contact.jpg "Contact")
- ![Portfolio!](/assets/Portofolio.jpg "Portfolio")
- ![Resume!](/assets/Resume.jpg "Resume")
+ ![About!](./src/assets/About.jpg "About")
+ ![Contact!](./src/assets/Contact.jpg "Contact")
+ ![Portfolio!](./src/assets/Portofolio.jpg "Portfolio")
+ ![Resume!](./src/assets/Resume.jpg "Resume")
 
 
 
