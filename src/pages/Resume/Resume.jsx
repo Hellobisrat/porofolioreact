@@ -3,6 +3,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './style.css'
 export default function Resume () {
   return (
+    <>
     <div>
        <h2>Resume </h2>
        <h5> Downloaded my resume</h5>
@@ -32,7 +33,18 @@ export default function Resume () {
       </ListGroup>
     </Card>
       
-      
+    
+
     </div>
+    <button type="button" className="btn btn-outline-success">
+    <a
+     className="button"
+     href="../src/assets/cv.pdf"
+     download
+     >
+     Download Resume
+     </a>
+    </button>
+    </>
   );
 }
