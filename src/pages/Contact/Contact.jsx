@@ -22,7 +22,7 @@ function Contact () {
     <h3>Contact</h3>
     <Formik
       validationSchema={schema}
-      onSubmit={console.log}
+      onSubmit={console.log()}
       initialValues={{
         Name: '',
         email: '',
@@ -41,9 +41,9 @@ function Contact () {
                 type="text"
                 placeholder=""
                 name="name"
-                value={values.Name}
+                value={values.name}
                 onChange={handleChange}
-                isInvalid={!!errors.Name}
+                isInvalid={!!errors.name}
               />
              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
