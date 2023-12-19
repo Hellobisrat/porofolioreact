@@ -11,10 +11,10 @@
 
  each component page pictures are displayed
 
- <img src='./portfolio/src/assets/About.jpg'>
- <img src='./portfolio/src/assets/Contact.jpg'>
- <img src='./portfolio/src/assets/Portofolio.jpg'>
- <img src='./portfolio/src/assets/Resume.jpg'>
+ <img src='./src/assets/About.jpg'>
+ <img src='./src/assets/Contact.jpg'>
+ <img src='./src/assets/Portofolio.jpg'>
+ <img src='./src/assets/Resume.jpg'>
 
 
 repo link https://github.com/Hellobisrat/porofolioreact.git
