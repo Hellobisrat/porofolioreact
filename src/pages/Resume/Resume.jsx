@@ -39,7 +39,7 @@ export default function Resume () {
     <button type="button" className="btn btn-outline-success">
     <a
      className="button"
-     href="../src/assets/cv.pdf"
+     href="../src/assets/CV (Full stack).pdf"
      download
      >
      Download Resume
